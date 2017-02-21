@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>折叠菜单组</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<!--手风琴效果
+			官方文档      http://v3.bootcss.com/javascript/#collapse
+			添加class="in"即代表默认展开
+		-->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5">
+				<!--1.把所有的面板都放到一个父级里，并且给父级添加一个panel-group，还有一个id-->
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+					<div class="panel-heading">
+						<!--2.给要点击的元素添加一个data-parent属性，并且添加一个id-->
+						<h3 class="panel-title" data-parent="#accordion" data-toggle="collapse" data-target="#con1">ITshare</h3>
+					</div>
+					<!--3.给内容区域添加一个collapse的class-->
+					<div class="in collapse" id="con1">
+					<div class="panel-body">
+						Levy WangLevy WangLevy WangLevy WangLevy WangLevy WangLevy Wang
+					</div>
+				 </div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title" data-parent="#accordion" data-toggle="collapse" data-target="#con2">ITshare</h3>
+					</div>
+					<div class="collapse" id="con2">
+					<div class="panel-body">
+						Levy WangLevy WangLevy WangLevy WangLevy WangLevy WangLevy Wang
+					</div>
+				 </div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title" data-parent="#accordion" data-toggle="collapse" data-target="#con3">ITshare</h3>
+					</div>
+					<div class="collapse" id="con3">
+					<div class="panel-body">
+						Levy WangLevy WangLevy WangLevy WangLevy WangLevy WangLevy Wang
+					</div>
+				 </div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-7">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title" data-toggle="collapse" data-target="#con4">ITshare</h3>
+					</div>
+					<div class="in" id="con4">
+					<div class="panel-body">
+						Hello World!
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

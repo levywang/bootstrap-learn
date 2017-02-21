@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>栅格布局</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<style type="text/css">
+			.row div{
+				background: #555555;
+				color: #fff;
+				height: 100px;
+				margin-top: 10px;
+				border: 1px solid #000000;
+			}
+		</style>
+	</head>
+	<!--
+		row    代表一行
+		col-lg-x      代表列
+		数字代表占了几个格子，一列分成12格
+		如果列的和超过里12，就会换行显示（第四行效果）
+		如果有一列超出了12，那么则按12显示（第五行效果）
+		
+		第二个单词代表屏幕的尺寸
+		lg   宽度>1200
+		表现形式：    屏幕的宽度大于1200px，一行显示n（结构里有几个div）列
+		             屏幕的宽度小于1200px，一行显示一列
+		md   992<=宽度<1200
+		表现形式：    屏幕的宽度大于992px并且小于1200px，一行显示n（结构里有几个div）列
+		             屏幕的宽度小于992px，一行显示一列
+		sm   768<=宽度<992           
+		表现形式：    屏幕的宽度大于768px并且小于992px，一行显示n（结构里有几个div）列
+		             屏幕的宽度小于768px，一行显示一列
+		xs   宽度<=768
+	    表现形式：    屏幕的宽度小于768px，一行永远显示n（结构里有几个div）列
+		
+	-->
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1">第1行第1列</div>
+				<div class="col-lg-11">第1行第2列</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4">第2行第1列</div>
+				<div class="col-md-4">第2行第2列</div>
+				<div class="col-md-4">第2行第3列</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-4">第3行第1列</div>
+				<div class="col-sm-4">第3行第2列</div>
+				<div class="col-sm-4">第3行第3列</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-4">第4行第1列</div>
+				<div class="col-xs-4">第4行第2列</div>
+				<div class="col-xs-4">第4行第3列</div>
+			</div>
+		</div>
+	
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

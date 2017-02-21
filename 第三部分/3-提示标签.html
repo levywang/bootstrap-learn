@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+	<title>提示标签</title>
+	<style type="text/css">
+		p {
+			margin: 200px 0;
+		}
+	</style>
+</head>
+<body>
+	<!--
+		官方文档                 http://v3.bootcss.com/javascript/#tooltips
+		data-toggle="tooltop"   添加tooltip事件
+		data-placement          控制提示标签的方向
+	-->
+	<div class="container">
+		<div class="row">
+			<p> <a href="#" class="tool" data-toggle="tooltip" data-placement="right" 
+			title="Hello world">ITshare</a> hello world hello world hello world hello
+			world hello world hello world hello world hello world hello world hello world
+			 hello world hello world hello world hello world hello world hello world hello
+			 world hello world </p>
+		</div>
+		
+		<div class="row">
+			<button class="btn btn-primary tool" data-toggle="tooltip" data-placement
+			="left" title="Hello">ITshare</button>
+		</div>
+		
+	</div>
+
+<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('.tool').tooltip();
+</script>
+</body>
+</html>

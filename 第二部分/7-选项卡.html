@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>选项卡</title>
+		<style type="text/css">
+			.tab1 {
+				border: 1px solid #ddd;
+				border-top: none;
+				padding: 100px;
+				border-radius: 0px 0px 5px 5px;
+				background-color: #2AABD2;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			注意：使用标签页(TAB)插件，必须先引用jquery！严格按照bootstrap.css、jquery.js、bootstrap.css顺序
+			请配合 http://v3.bootcss.com/components/#nav 食用～
+			
+			1.导航对应的所有内容需要放到class为tab-content的层内
+			2.给每一个内容块加上为tab-pane的class,并且给对应的默认显示内容添加一个active的class
+			3.给每一个导航的a标签data-toggle="tab"的自定义属性
+			4.给每一个内容添加一个id
+			5.给每一个导航里的a标签添加锚点
+		-->
+		
+		<div class="container">
+			<div class="row">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#con1" data-toggle="tab">HOME</a></li>
+					<li><a href="#con2" data-toggle="tab">ABOUT</a></li>
+					<li><a href="#con3" data-toggle="tab">MENU</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="con1" class="tab-pane active">html</div>
+					<div id="con2" class="tab-pane">css</div>
+					<div id="con3" class="tab-pane">js</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#con4" data-toggle="tab">HOME</a></li>
+					<li><a href="#con5" data-toggle="tab">ABOUT</a></li>
+					<li><a href="#con6" data-toggle="tab">MENU</a></li>
+				</ul>
+				<div class="tab-content tab1">
+					<div id="con4" class="tab-pane active">html</div>
+					<div id="con5" class="tab-pane">css</div>
+					<div id="con6" class="tab-pane">js</div>
+				</div>
+			</div>
+		</div>
+			
+			
+		</div>
+	</body>
+</html>

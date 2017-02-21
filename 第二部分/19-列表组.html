@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<title>列表组</title>
+	</head>
+	<body>
+		<!--
+			list-group             代表列表组，给ul添加
+			list-group-item        代表列表项，给li添加
+			list-group-item-*      颜色
+			list-group-item-heading 列表组标题
+			list-group-item-text   列表组内容
+		-->
+		<div class="container">
+			<div class="row">
+				<ul class="list-group">
+					<li class="list-group-item">html</li>
+					<li class="list-group-item">javascript</li>
+					<li class="list-group-item">css</li>
+					<li class="list-group-item">bootstrap</li>
+				</ul>
+			</div>
+			
+			
+			<!--给每个列表加上标记，此标记会自动浮动至右侧-->
+			<div class="row">
+				<ul class="list-group">
+					<li class="list-group-item">html<span class="badge">50</span></li>
+					<li class="list-group-item">javascript<span class="badge">50</span></li>
+					<li class="list-group-item">css<span class="badge">50</span></li>
+					<li class="list-group-item">bootstrap<span class="badge">50</span></li>
+				</ul>
+			</div>
+			
+			<!--通过a标签实现，并且带链接，上面列表组不带链接-->
+			<div class="row">
+				<ul class="list-group">
+					<a href="#" class="list-group-item active">html<span class="badge">50</span></a>
+					<a href="#" class="list-group-item disabled">javascript<span class="badge">50</span></a>
+					<a href="#" class="list-group-item list-group-item-danger">css<span class="badge">50</span></a>
+					<a href="#" class="list-group-item lis list-group-item-info">bootstrap<span class="badge">50</span></a>
+					<a href="#" class="list-group-item lis list-group-item-success">ajax<span class="badge">50</span></a>
+				</ul>
+			</div>
+			
+			<!--添加标题与段落的列表组-->
+			<div class="row">
+				<ul class="list-group">
+					<li class="list-group-item active">
+					<h4 class="list-group-item-heading">ITshare</h4>
+					<p class="list-group-item-text">Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang  </p>
+					</li>
+					<li class="list-group-item">
+					<h4 class="list-group-item-heading">ITshare</h4>
+					<p class="list-group-item-text">Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang  </p>
+					</li>
+					<li class="list-group-item">
+						<h4 class="list-group-item-heading">ITshare</h4>
+					<p class="list-group-item-text">Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang  </p>
+					</li>
+					<li class="list-group-item">
+						<h4 class="list-group-item-heading">ITshare</h4>
+					<p class="list-group-item-text">Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang  </p>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

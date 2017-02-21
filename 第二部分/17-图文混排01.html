@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<title>图文混排</title>
+		<style type="text/css">
+			.row {
+				margin-bottom: 30px;
+				border-bottom: 1px solid #CCC;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--
+			官方文档       http://v3.bootcss.com/components/#media
+			media         图文混排
+			media-left    图片的区域在左边显示
+			media-right   图片的区域在右边显示
+			media-body    内容区域
+			media-header  内容区域标题
+		-->
+		<div class="container">
+			<div class="row">
+				<div class="media">
+					<a href="#" class="media-left">
+						<img src="../logo.jpg" style="width: 100px; height: 100px;" />
+					</a>
+					<div class="media-body">
+						<h4 class="media-heading">ITshare</h4>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+					</div>
+				</div>
+			</div>
+			
+			<!--图片在右边显示-->
+			<div class="row">
+				<div class="media">
+					<div class="media-body">
+						<h4 class="media-heading">ITshare</h4>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+					</div>
+					<a href="#" class="media-right">
+						<img src="../logo.jpg" style="width: 100px; height: 100px;" />
+					</a>
+				</div>
+			</div>
+			
+			<!--两边都有图片-->
+			<div class="row">
+				<div class="media">
+					<a href="#" class="media-left">
+						<img src="../logo.jpg" style="width: 100px; height: 100px;" />
+					</a>
+					<div class="media-body">
+						<h4 class="media-heading">ITshare</h4>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+					</div>
+					<a href="#" class="media-right">
+						<img src="../logo.jpg" style="width: 100px; height: 100px;" />
+					</a>
+				</div>
+			</div>
+			
+			
+			<!--图文混排嵌套双层-->
+			<div class="row">
+				<div class="media">
+					<a href="#" class="media-left">
+						<img src="../logo.jpg" style="width: 64px; height: 64px;" />
+					</a>
+					<div class="media-body">
+						<h4 class="media-heading">ITshare</h4>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+						<div class="media">
+					<a href="#" class="media-left">
+						<img src="../logo.jpg" style="width: 64px; height: 64px;" />
+					</a>
+					<div class="media-body">
+						<h4 class="media-heading">ITshare</h4>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+						<p>Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang </p>
+					</div>
+				</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+
+		<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

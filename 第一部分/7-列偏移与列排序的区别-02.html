@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>列排序与列排序的区别</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<style type="text/css">
+			.row div{
+				background: #555555;
+				color: #fff;
+				height: 100px;
+				border: 1px solid #000000;
+			}
+		</style>
+	</head>
+	<!--
+	    区别
+	    1.列偏移col-lg-offset-x只能往右走，列排序push、pull既可以往左也可以往右
+	    2.列偏移col-lg-offset-x大于13格折行再偏移规定的格，列排序push、pull则不会（第五行效果）
+	    
+	-->
+	<body>
+		<div class="container" style="border: 1px solid red;">
+			<!--第一个区别-->
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-10">第1行第1列</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 col-lg-push-10">第2行第1列</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 col-lg-pull-2">第3行第1列</div>
+			</div>
+			
+			<!--第二个区别-->
+			<div class="row">
+				<div class="col-lg-4">第4行第1列</div>
+				<div class="col-lg-4 col-lg-offset-5">第4行第2列</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4">第5行第1列</div>
+				<div class="col-lg-4 col-lg-push-5">第5行第2列</div>
+			</div>
+		</div>
+	
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

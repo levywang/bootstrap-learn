@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>折叠菜单</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+	</head>
+
+	<body>
+		<!--
+			1.给要点击的那个元素添加一个data-toggle="collapse"
+			2.并且需要给它添加一个data-target,让它的值与内容对应区域的id或者class相同
+			3.给对应的内容区域添加一個class或者id，与点击的元素相对应
+			
+			注意：
+			1.内容区域不能有padding值
+			2.内容区域添加class="in"，防止二次收缩
+		-->
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-5">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+						<a href="#" data-toggle="collapse" data-target="#con">
+						ITshare</a>
+						</h3>
+					</div>
+					<div id="con" class="in">
+					<div class="panel-body">
+						Levy Wang Levy Wang Levy Wang Levy Wang Levy Wang
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        <script src="../../jquery/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

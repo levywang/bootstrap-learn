@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<script src="../../jquery/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>下拉菜单</title>
+
+	</head>
+	<body>
+		<!--
+			官方文档     http://v3.bootcss.com/components/#dropdowns
+			1.给父级添加一个dropdown,或者给父级添加定位属性
+			2.button添加一个data-toggle="dropdown"属性,并且添加dropdown-toggle样式，去除边框激活状态
+			3.给ul添加dropdown-menu的class
+		-->
+		<div class="container">
+			<div class="row">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">ITshare<span class="caret"></span></button>
+					
+					<ul class="dropdown-menu">
+						<li><a href="#">html</a></li>
+						<li><a href="#">css</a></li>
+						<li><a href="#">jquery</a></li>
+						<li><a href="#">bootstrap</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<title>进度条</title>
+	</head>
+	<body>
+		<!--
+			官方文档   http://v3.bootcss.com/components/#progress
+			progress-bar-*        进度条四种颜色warning、info、danger、success
+			progress-bar-striped  带条纹的进度条，加active的class会变成动态进度条
+		-->
+		<div class="container">
+			<div class="row" style="margin-top: 100px;">
+				<div class="progress">
+					<div class="progress-bar" style="width: 60%;">60%</div>
+				</div>
+				
+				<div class="progress">
+					<div class="progress-bar progress-bar-success" style="width: 36%;">36%</div>
+				</div>
+				
+				<div class="progress">
+					<div class="progress-bar progress-bar-info" style="width: 50%;">50%</div>
+				</div>
+				
+				<div class="progress">
+					<div class="progress-bar progress-bar-danger" style="width: 98%;">98%</div>
+				</div>
+				
+				<!--带条纹的进度条-->
+				<div class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 46%;">46%</div>
+				</div>
+				
+				  <!--带堆叠效果的进度条-->
+			    <div class="progress">
+					<div class="progress-bar progress-bar-info" style="width: 20%;">20%</div>
+					<div class="progress-bar progress-bar-warning" style="width: 30%;">30%</div>
+					<div class="progress-bar progress-bar-success" style="width: 10%;">10%</div>
+					<div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 40%;">40%</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

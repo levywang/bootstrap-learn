@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>列偏移</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<style type="text/css">
+			.row div{
+				background: #555555;
+				color: #fff;
+				height: 100px;
+				margin-top: 10px;
+				border: 1px solid #000000;
+			}
+		</style>
+	</head>
+	<!--
+		col-lg-offset-4       向右偏移4个格子
+		等于12，偏移到最右边栏，大于12不起作用
+	-->
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">第1行第1列</div>
+				<div class="col-lg-4">第1行第2列</div>
+				<div class="col-lg-4">第1行第3列</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-4">第2行第1列</div>
+			</div>
+		</div>
+	
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

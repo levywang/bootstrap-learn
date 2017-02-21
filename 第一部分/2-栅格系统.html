@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>栅格系统</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<!--
+			container-fluid          自适应宽度100%
+			container                固定宽度（适应响应式）
+			                         宽度>=1200  1170px
+			                         992=<宽度<1200   970px
+			                         768=<宽度<992    750px
+			                         宽度<768         auto
+			                         	
+			 注意：这两种class不能放在一起，可以是兄弟关系，但是不能嵌套！
+			       如果不想让宽度随着屏幕而变化，可以给它一个!important来提升优先级，这样的话在所有尺寸下都是一个定值
+		-->
+		<div class="container-fluid">
+			<div style="background: gray;">
+				ITshare
+			</div>
+		</div>
+		
+		<div class="container">
+			<div style="background: #3071A9; width: 1300px!important;">
+				ITshare
+			</div>
+		</div>
+		
+		
+	    <script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

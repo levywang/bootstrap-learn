@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+	</head>
+
+	<body>
+		<!--
+			form-control     让表单的宽度为100%，并添加一些其他样式
+			form-group       给表单之间添加了一些距离
+			form-inline      让表单在一行中显示,小于768分行显示
+			form-horizontal  让表单在一行中显示，并且能够改变form-group样式
+			control-label    让label里的文字垂直居中
+        -->
+		<div class="container">
+			<div class="row">
+				<form action="#" class="form-horizontal">
+					<div class="form-group">
+						<label class="col-lg-1 control-label" for="username">用户名</label>
+						<div class="col-lg-11">
+							<input type="text" id="username" class="form-control" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<lable for="password" class="col-lg-1 control-label">密码</lable>
+						<div class="col-lg-11">
+							<input type="password" id="password" class="form-control" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-lg-1 col-lg-offset-1">
+							<div class="checkbox">
+								<label><input type="checkbox"/>记住我</label>
+							</div>
+						</div>
+					</div>
+
+					<input type="button" value="登录" class="btn col-lg-offset-1" />
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>

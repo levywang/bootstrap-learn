@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>嵌套</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<style type="text/css">
+			.row div{
+				background: #555555;
+				color: #fff;
+				height: 100px;
+				border: 1px solid #000000;
+			}
+		</style>
+	</head>
+	<!--
+	    每一列里面都可以再嵌套一行和n（不能超过12）列，嵌套的元素就会以父级的宽度为基准分12个格子
+	-->
+	<body>
+		<div class="container" style="border: 1px solid red;">
+			<div class="row">
+				<div class="col-lg-6">
+					第1行第1列
+					<div class="row">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4"></div>
+				    </div>
+				</div>
+				<div class="col-lg-6">第1行第2列</div>
+			</div>
+		</div>
+	
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

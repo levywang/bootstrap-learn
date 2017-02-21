@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>列排序</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<style type="text/css">
+			.row div{
+				background: #555555;
+				color: #fff;
+				height: 100px;
+				margin-top: 10px;
+				border: 1px solid #000000;
+			}
+		</style>
+	</head>
+	<!--
+		col-lg-push-10       列往后走10格
+		col-lg-pull-10       列往左走10格
+	-->
+	<body>
+		<div class="container" style="border: 1px solid red;">
+			<div class="row">
+				<div class="col-lg-2 col-lg-push-5">第1行第1列</div>
+				<div class="col-lg-2 col-lg-push-13">第1行第2列</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-2 col-lg-push-1">第2行第1列</div>
+				<div class="col-lg-2 col-lg-push-13">第2行第2列</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-2 col-lg-push-10">第3行第1列</div>
+				<div class="col-lg-10 col-lg-pull-2">第3行第2列</div>
+			</div>
+		</div>
+	
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

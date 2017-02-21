@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>输入框组</title>
+	</head>
+
+	<body>
+		<!--
+			官方文档     http://v3.bootcss.com/components/#input-groups
+			input-group          输入框组，只能针对输入框
+			input-group-addon    给输入框添前后添加额外元素   
+			input-group-*        修改输入框组的尺寸(lg,md,sm尺寸) PS：无xs尺寸
+		-->
+		<div class="container">
+			<div class="row">
+				<div class="input-group">
+					<span class="input-group-addon">@</span>
+					<input type="text" class="form-control" />
+				</div>
+			</div>
+
+			<!--输入框组的尺寸-->
+			<div class="row" style="margin-top: 30px;">
+				<div class="input-group input-group-lg">
+					<span class="input-group-addon">@</span>
+					<input type="text" class="form-control" />
+				</div>
+			</div>
+
+			<!--额外内容放的是checkbox-->
+			<div class="row" style="margin-top: 30px;">
+				<div class="input-group">
+					<span class="input-group-addon"><input type="checkbox" /></span>
+					<input type="text" class="form-control" />
+				</div>
+			</div>
+
+			<!--额外内容放的是radio-->
+			<div class="row" style="margin-top: 30px;">
+				<div class="input-group">
+					<span class="input-group-addon"><input type="radio" /></span>
+					<input type="text" class="form-control" />
+				</div>
+			</div>
+
+			<!--额外内容放的是按钮-->
+			<div class="row" style="margin-top: 30px;">
+				<div class="input-group">
+					<input type="text" class="form-control" />
+					<span class="input-group-btn"><button  type="button" class="btn btn-default">搜索</button></span>
+				</div>
+			</div>
+
+			<!--额外内容放的是下拉菜单-->
+			<div class="row" style="margin-top: 30px;">
+				<div class="input-group">
+					<div class="input-group-btn">
+							<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">ITshare<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">html</a></li>
+								<li><a href="#">css</a></li>
+								<li><a href="#">jquery</a></li>
+								<li><a href="#">bootstrap</a></li>
+							</ul>
+					</div>
+					<input type="text" class="form-control" />
+				</div>
+			</div>
+			
+			
+		</div>
+	</body>
+
+</html>

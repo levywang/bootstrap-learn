@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<title>响应式工具</title>
+		<style type="text/css">
+			.row div {
+				height: 100px;
+				background: green;
+				border: 1px solid #000;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			针对不同的宽度，展示或者隐藏相关内容
+			 
+			visible-ld-block   显示
+			
+			hidden-lg          隐藏
+		-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 visible-lg-block">第一行第一列</div>
+				<div class="col-lg-4 visible-lg-inline">第一行第二列</div>
+				<div class="col-lg-4 visible-lg-inline-block">第一行第三列</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 visible-md-block">第二行第一列</div>
+				<div class="col-lg-4 visible-md-inline">第二行第二列</div>
+				<div class="col-lg-4 visible-md-inline-block">第二行第三列</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 hidden-lg">第三行第一列</div>
+			</div>
+		</div>
+	</body>
+</html>

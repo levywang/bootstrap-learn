@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>辅助类class</title>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<style type="text/css">
+			.sh div {
+				height: 100px;
+				background: green;
+				border: 1px solid #000;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<!--字体的颜色-->
+			<div class="row">
+				<p class="text-muted">ITshare, Levy</p>
+				<p class="text-primary">ITshare, Levy</p>
+				<p class="text-warning">ITshare, Levy</p>
+				<p class="text-info">ITshare, Levy</p>
+				<p class="text-success">ITshare, Levy</p>
+				<p class="text-danger">ITshare, Levy</p>
+			</div>
+			
+			<!--字体的背景-->
+			<div class="row" style="margin-top: 50px;">
+			<p class="bg-primary">ITshare, Levy</p>
+			<p class="bg-warning">ITshare, Levy</p>
+			<p class="bg-info">ITshare, Levy</p>
+			<p class="bg-success">ITshare, Levy</p>
+			<p class="bg-danger">ITshare, Levy</p>
+			</div>
+			
+			<!--三角符号、关闭按钮-->
+			<div class="row" style="margin-top: 50px;">
+				<span class="caret"></span>
+				<button class="close">&times;</button>
+			</div>
+			
+			<!--浮动,row自带清除浮动-->
+			<div class="row" style="border: 1px solid #f00;">
+				<div class="pull-left">Levy</div>
+				<div class="pull-right">	Levy</div>
+			</div>
+			
+			<!--清除浮动,clearfix-->
+			<div class="row">
+				<div style="border: 1px solid green;" class="clearfix">
+				<div class="pull-left">Levy</div>
+				<div class="pull-right">	Levy</div>
+				</div>
+			</div>
+			
+			<!--居中对齐-->
+			<div class="row">
+				<div style="width: 100px; height: 100px; border: 1px solid red;" class="center-block">
+				</div>
+			</div>
+			
+			<!--隐藏与显示,show显示，hidden隐藏，invisible隐藏但是位子还在-->
+			<div class="row sh">
+				<div class="col-lg-2 show">1</div>
+				<div class="col-lg-3 hidden">2</div>
+				<div class="col-lg-3 invisible">3</div>
+				<div class="col-lg-3">4</div>
+				<div class="col-lg-1">5</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>下拉菜单</title>
+	</head>
+	<body>
+		<!--
+			官方文档     http://v3.bootcss.com/components/#btn-dropdowns
+			
+			open             给div-dropdown添加open，即菜单默认展开
+			pull-right/left  菜单左右浮动
+			dropup           菜单从上展开
+			dropdown-header  给菜单展开栏添加标题
+			text-center      居中文本
+			divider          给li添加分割线
+			disable          禁止点击
+            			
+		-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="dropdown open">
+					<button class="btn btn-default dropdown-toggle btn-primary" data-toggle="dropdown">ITshare<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#">html</a></li>
+						<li><a href="#">css</a></li>
+						<li><a href="#">jquery</a></li>
+						<li><a href="#">bootstrap</a></li>
+					</ul>
+				</div>
+				</div>
+				
+				<div class="col-lg-4" style="margin-top: 150px;">
+					<div class="dropup">
+					<button class="btn btn-default dropdown-toggle btn-primary" data-toggle="dropdown">ITshare<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#">html</a></li>
+						<li><a href="#">css</a></li>
+						<li><a href="#">jquery</a></li>
+						<li><a href="#">bootstrap</a></li>
+					</ul>
+				</div>
+				</div>
+				
+				<div class="col-lg-4">
+					<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle btn-primary" data-toggle="dropdown">ITshare<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header text-center"><a href="#">前端</a></li>
+						<li><a href="#">html</a></li>
+						<li><a href="#">css</a></li>
+						<li><a href="#">jquery</a></li>
+						<li><a href="#">bootstrap</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header text-center"><a href="#">后端</a></li>
+						<li><a href="#">php</a></li>
+						<li><a href="#">.net</a></li>
+						<li class="disabled"><a href="#">java</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</body>
+</html>

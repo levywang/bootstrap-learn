@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>导航条02</title>
+	</head>
+	<body>
+		<!--
+			官网
+			navbar-header   导航的头部，一般情况下放logo
+			navbar-brand    同来放logo，需要配合navbar-header
+		-->
+		<!--一般情况下，都会把nav标签包在container标签外面-->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+				<a href="#" class="navbar-brand">logo</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">MENU</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!--有链接与文字的导航条-->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+				<a href="#" class="navbar-brand">logo</a>
+				</div>
+				<ul class="nav navbar-nav navbar-left">
+					<li class="active"><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">MENU</a></li>
+				</ul>
+				
+				<!--如果导航里有文字，需要给p标签加上navbar-text
+					如果导航里有链接，需要给a标签加上navbar-link，再加上navbar-text改变样式居中
+				-->
+				<a href="#" class="navbar-link navbar-text">链接</a>
+				<p class="navbar-text">This is Text</p>
+				
+				<!--navbar-right表示右对齐-->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">登录</a></li>
+					<li><a href="#">注册</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!--有表单的导航条-->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+				<a href="#" class="navbar-brand">logo</a>
+				</div>
+				<!--navbar-left表示左对齐-->
+				<ul class="nav navbar-nav navbar-left">
+					<li class="active"><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">MENU</a></li>
+				</ul>
+				<!--如果导航里只有一个按钮，那给它加上一个navbar-btn-->
+				<button class="btn btn-default navbar-btn">搜索</button>
+		
+				<!--navbar-right表示右对齐-->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">登录</a></li>
+					<li><a href="#">注册</a></li>
+				</ul>
+			</div>
+		</nav>
+	</body>
+</html>
